@@ -1,0 +1,192 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Georgia, 'Times New Roman', serif;
+  color: #1f2a24;
+  background: #fbfaf5;
+  line-height: 1.6;
+}
+
+a {
+  color: #37533f;
+}
+
+header {
+  position: sticky;
+  top: 0;
+  background: #fbfaf5;
+  border-bottom: 1px solid #e2dfd5;
+  display: flex;
+  align-items: center;
+  gap: 28px;
+  padding: 22px 7vw;
+  z-index: 2;
+}
+
+.brand {
+  font-size: 1.35rem;
+  text-decoration: none;
+  font-weight: 700;
+  color: #1f2a24;
+}
+
+nav {
+  margin-left: auto;
+  display: flex;
+  gap: 18px;
+  flex-wrap: wrap;
+}
+
+nav a {
+  text-decoration: none;
+  font-size: .95rem;
+}
+
+.menu {
+  display: none;
+}
+
+.hero, .content {
+  max-width: 1120px;
+  margin: 0 auto;
+  padding: 64px 7vw;
+}
+
+.narrow {
+  max-width: 860px;
+}
+
+.hero h1 {
+  font-size: clamp(2rem,5vw,4.8rem);
+  line-height: 1.05;
+  letter-spacing: -.04em;
+  margin: 10px 0 24px;
+}
+
+.lead {
+  font-size: 1.25rem;
+  color: #46554b;
+}
+
+.eyebrow {
+  text-transform: uppercase;
+  letter-spacing: .14em;
+  font-size: .85rem;
+  color: #6c7a70;
+}
+
+.image-placeholder {
+  min-height: 240px;
+  background: linear-gradient(135deg,#d7dfd9,#f1efe8);
+  border: 1px solid #d8d5cb;
+  display: grid;
+  place-items: center;
+  color: #68776d;
+  margin-bottom: 30px;
+}
+
+.portrait {
+  width: 260px;
+  min-height: 320px;
+}
+
+.small {
+  min-height: 140px;
+}
+
+.person {
+  display: grid;
+  grid-template-columns: 280px 1fr;
+  gap: 34px;
+  margin: 28px 0;
+}
+
+.cards, .project-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(260px,1fr));
+  gap: 24px;
+}
+
+.cards article, .project, .course, .news-list article {
+  background: white;
+  border: 1px solid #e4e1d8;
+  padding: 24px;
+}
+
+.project h3, .news-list h3 {
+  line-height: 1.25;
+}
+
+.button {
+  display: inline-block;
+  border: 1px solid #37533f;
+  border-radius: 999px;
+  padding: 10px 16px;
+  text-decoration: none;
+  margin: 4px 8px 4px 0;
+}
+
+.date {
+  font-size: .9rem;
+  text-transform: uppercase;
+  letter-spacing: .1em;
+  color: #6c7a70;
+}
+
+footer {
+  margin-top: 70px;
+  padding: 42px 7vw;
+  background: #203329;
+  color: #fff;
+}
+
+footer a {
+  color: #fff;
+}
+
+footer h3 {
+  margin-top: 0;
+}
+
+@media (max-width:760px) {
+  header {
+    display: block;
+  }
+
+  .brand {
+    display: inline-block;
+  }
+
+  .menu {
+    display: block;
+    float: right;
+    background: none;
+    border: 1px solid #999;
+    padding: 6px 10px;
+  }
+
+  nav {
+    display: none;
+    margin-top: 18px;
+  }
+
+  nav.open {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .person {
+    grid-template-columns: 1fr;
+  }
+
+  .portrait {
+    width: 100%;
+  }
+
+  .hero, .content {
+    padding: 42px 6vw;
+  }
+}
