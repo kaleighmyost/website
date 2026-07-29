@@ -55,6 +55,22 @@ nav a {
   padding: 64px 7vw;
 }
 
+.headshot{
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  flex-wrap: wrap;
+}
+
+.kaleigh-photo{
+  width: 220px;
+  max-width: 100%;
+  height: auto;
+  display: block;
+  flex: 0 0 auto;
+  border-radius: 8px; /* optional */
+}
+
 .narrow {
   max-width: 860px;
 }
