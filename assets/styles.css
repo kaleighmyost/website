@@ -56,12 +56,22 @@ nav a {
 }
 
 .headshot{
-  display: flex;
-  align-items: center;
-  gap: 24px;
-  flex-wrap: wrap;
+  display:flex;
+  align-items:flex-start;
+  gap:24px;
+  flex-wrap:wrap;
 }
 
+.kaleigh-photo{
+  width:220px;
+  height:auto;
+  display:block;
+  flex:0 0 auto;
+}
+
+.headshot-text{
+  max-width:600px;
+}
 .kaleigh-photo{
   width: 220px;
   max-width: 100%;
