@@ -56,29 +56,20 @@ nav a {
 }
 
 .headshot{
-  display:flex;
-  align-items:flex-start;
+  display:grid;
+  grid-template-columns:220px minmax(0,1fr);
   gap:24px;
-  flex-wrap:wrap;
+  align-items:start;
 }
 
 .kaleigh-photo{
   width:220px;
   height:auto;
   display:block;
-  flex:0 0 auto;
 }
 
 .headshot-text{
-  max-width:600px;
-}
-.kaleigh-photo{
-  width: 220px;
-  max-width: 100%;
-  height: auto;
-  display: block;
-  flex: 0 0 auto;
-  border-radius: 8px; /* optional */
+  min-width:0;
 }
 
 .narrow {
