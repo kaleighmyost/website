@@ -68,6 +68,19 @@ nav a {
   display:block;
 }
 
+.project-image {
+  overflow: hidden;
+  min-height: 240px;
+  margin-bottom: 30px;
+}
+
+.project-image img {
+  width: 100%;
+  height: 240px;
+  object-fit: cover;
+  display: block;
+}
+
 .headshot-text{
   min-width:0;
 }
