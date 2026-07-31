@@ -50,6 +50,67 @@ function initCarousel(carousel) {
       dot.classList.toggle('active', n === index);
     });
   }
+
+.carousel {
+  position: relative;
+  max-width: 900px;
+  margin: 0 auto 30px;
+}
+
+.carousel-slide {
+  display: none;
+  width: 100%;
+  height: 420px;
+  object-fit: cover;
+  border: 1px solid #d8d5cb;
+}
+
+.carousel-slide.active {
+  display: block;
+}
+
+.carousel-dots {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  margin-top: 12px;
+}
+
+.carousel-dot {
+  width: 10px;
+  height: 10px;
+  border: 0;
+  border-radius: 50%;
+  background: #c6cec8;
+  cursor: pointer;
+}
+
+.carousel-dot.active {
+  background: #37533f;
+}
+
+.carousel [data-prev],
+.carousel [data-next] {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(255,255,255,.85);
+  border: 1px solid #d8d5cb;
+  padding: 8px 12px;
+  cursor: pointer;
+  z-index: 1;
+}
+
+.carousel [data-prev] { left: 10px; }
+.carousel [data-next] { right: 10px; }
+
+@media (max-width: 760px) {
+  .carousel-slide {
+    height: 280px;
+  }
+}
+
+    
 <!--End of homepage carousel--!>
 
 
