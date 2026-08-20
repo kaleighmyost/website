@@ -119,8 +119,8 @@ nav a {
 }
 
 .portrait {
-  width: 325px;
-  height: 400px;
+  width: 260px;
+  height: 320px;
   object-fit: cover;
   display: block;
 }
